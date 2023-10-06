@@ -1,6 +1,6 @@
 ---
 title: "\\Large Teoría de la decisión"
-author: "\\LARGE \\textbf{Primer trabajo}"
+author: "\\LARGE \\textbf{Métodos de incertidumbre}"
 date: "Luis Carlos Ocaña Hoeber \\break 10 de octubre de 2023"
 lang: es
 output:
