@@ -126,7 +126,7 @@ tabla2=crea.tablaX(c(50,75,110,400,
                      80,80,80,80))
 criterio.Todos(tabla2,0.5,F)
 
-# Deberá escoger la empresa Avis, ya que su planeamiento se corresponde
+# Deberá escoger la empresa Avis, ya que su planteamiento se corresponde
 # con el criterio optimista.
 # En el segundo caso debería escoger Cicar, ya que ese planteamiento
 # corresponde al criterio de Wald o pesimista.
