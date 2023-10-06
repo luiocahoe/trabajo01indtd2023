@@ -14,7 +14,7 @@ source("teoriadecision_funciones_incertidumbre.R") # Lectura de las funciones
 # separado (tanto en situación favorable como desfavorable).
 
 set.seed(2601) # Semilla para reproductividad
-datos1=runif(4*7) # Creación de datos aleatorios
+datos1=runif(7*4) # Creación de datos aleatorios
 datos1 # Visualización de datos
 tabla1=crea.tablaX(datos1,7,4) # Creación de la tabla
 tabla1 # Visualización de tabla
@@ -124,7 +124,7 @@ cat("La alternativa óptima por el criterio ",PuntoIdealD$criterio, " en el caso
 tabla2=crea.tablaX(c(50,75,110,400,
                      65,80,90,250,
                      80,80,80,80))
-criterio.Todos(tabla2,0.5,F)
+criterio.Todos(tabla2,0.5,T)
 
 # Deberá escoger la empresa Avis, ya que su planeamiento se corresponde
 # con el criterio optimista.
