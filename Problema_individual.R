@@ -20,7 +20,6 @@ tabla1 # Visualización de tabla
 ### Criterio de Wald o pesimísta
 ## Favorable
 WaldF=criterio.Wald(tabla1,T)
-
 cat("La alternativa óptima por el criterio ",WaldF$criterio, " en el caso de ", 
     ifelse(WaldF$metodo=="favorable","beneficios","costes"),
     " es la ",names(WaldF$AlternativaOptima),
@@ -45,4 +44,32 @@ cat("La alternativa óptima por el criterio ",OptimistaD$criterio, " en el caso 
     ifelse(OptimistaD$metodo=="favorable","beneficios","costes"),
     " es la ",names(OptimistaD$AlternativaOptima),
     " con un valor óptimo de ", OptimistaD$ValorOptimo, sep = "" )
+
+### Criterio Hurwicz
+## Favorable
+HurwiczF=criterio.Hurwicz(tabla1,T)
+cat("La alternativa óptima por el criterio ",HurwiczF$criterio, " en el caso de ",
+    ifelse(HurwiczF$metodo=="favorable","beneficios","costes"),
+    " es la ",names(HurwiczF$AlternativaOptima),
+    " con un valor óptimo de ", HurwiczF$ValorOptimo, sep = "" )
+## Desfavorable
+HurwiczD=criterio.Hurwicz(tabla1,F)
+cat("La alternativa óptima por el criterio ",HurwiczD$criterio, " en el caso de ",
+    ifelse(HurwiczD$metodo=="favorable","beneficios","costes"),
+    " es la ",names(HurwiczD$AlternativaOptima),
+    " con un valor óptimo de ", HurwiczD$ValorOptimo, sep = "" )
+
+### Criterio de Savage o costes de oportunidad
+## Favorable
+SavageF=criterio.Savage(tabla1,T)
+cat("La alternativa óptima por el criterio ",SavageF$criterio, " en el caso de ",
+    ifelse(SavageF$metodo=="favorable","beneficios","costes"),
+    " es la ",names(SavageF$AlternativaOptima),
+    " con un valor óptimo de ", SavageF$ValorOptimo, sep = "" )
+## Desfavorable
+SavageD=criterio.Savage(tabla1,F)
+cat("La alternativa óptima por el criterio ",SavageD$criterio, " en el caso de ",
+    ifelse(SavageD$metodo=="favorable","beneficios","costes"),
+    " es la ",names(SavageD$AlternativaOptima),
+    " con un valor óptimo de ", SavageD$ValorOptimo, sep = "" )
 
