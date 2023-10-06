@@ -124,7 +124,7 @@ cat("La alternativa óptima por el criterio ",PuntoIdealD$criterio, " en el caso
 tabla2=crea.tablaX(c(50,75,110,400,
                      65,80,90,250,
                      80,80,80,80))
-criterio.Todos(tabla2,0.5,T)
+criterio.Todos(tabla2,0.5,F)
 
 # Deberá escoger la empresa Avis, ya que su planeamiento se corresponde
 # con el criterio optimista.
