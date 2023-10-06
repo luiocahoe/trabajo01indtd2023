@@ -73,3 +73,31 @@ cat("La alternativa óptima por el criterio ",SavageD$criterio, " en el caso de 
     " es la ",names(SavageD$AlternativaOptima),
     " con un valor óptimo de ", SavageD$ValorOptimo, sep = "" )
 
+### Criterio de La Place
+## Favorable
+LaPlaceF=criterio.Laplace(tabla1,T)
+cat("La alternativa óptima por el criterio ",LaPlaceF$criterio, " en el caso de ",
+    ifelse(LaPlaceF$metodo=="favorable","beneficios","costes"),
+    " es la ",names(LaPlaceF$AlternativaOptima),
+    " con un valor óptimo de ", LaPlaceF$ValorOptimo, sep = "" )
+## Desfavorable
+LaPlaceD=criterio.Laplace(tabla1,F)
+cat("La alternativa óptima por el criterio ",LaPlaceD$criterio, " en el caso de ",
+    ifelse(LaPlaceD$metodo=="favorable","beneficios","costes"),
+    " es la ",names(LaPlaceD$AlternativaOptima),
+    " con un valor óptimo de ", LaPlaceD$ValorOptimo, sep = "" )
+
+### Criterio de punto ideal
+## Favorable
+PuntoIdealF=criterio.PuntoIdeal(tabla1,T)
+cat("La alternativa óptima por el criterio ",PuntoIdealF$criterio, " en el caso de ",
+    ifelse(PuntoIdealF$metodo=="favorable","beneficios","costes"),
+    " es la ",names(PuntoIdealF$AlternativaOptima),
+    " con un valor óptimo de ", PuntoIdealF$ValorOptimo, sep = "" )
+## Desfavorable
+PuntoIdealD=criterio.PuntoIdeal(tabla1,F)
+cat("La alternativa óptima por el criterio ",PuntoIdealD$criterio, " en el caso de ",
+    ifelse(PuntoIdealD$metodo=="favorable","beneficios","costes"),
+    " es la ",names(PuntoIdealD$AlternativaOptima),
+    " con un valor óptimo de ", PuntoIdealD$ValorOptimo, sep = "" )
+
