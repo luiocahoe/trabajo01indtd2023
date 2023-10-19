@@ -106,7 +106,7 @@ cat("La alternativa óptima por el criterio ",PuntoIdealD$criterio, " en el caso
 ######### SEGUNDO PROBLEMA
 # Crear un enunciado que se refiera a una situación real y resolverlo con la
 # función R que devuelve la resolución de todos los métodos en una única tabla.
-# Luis se va de vacaciones de Mikonos y quiere alquilar un coche durante un día
+# Luis se va de vacaciones de Mykonos y quiere alquilar un coche durante un día
 # para recorrerse la isla. Estaba pensando alquilar un coche pequeño, como un
 # fiat 500, encontrando las siguientes 3 empresas con este tipo de vehículos:
 # Avis, que por 1 día le cobra 50€, Europcar por 65€ y Cicar por 80€.
